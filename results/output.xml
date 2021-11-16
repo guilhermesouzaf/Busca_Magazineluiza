@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210624 15:06:43.192" rpa="false" schemaversion="2">
+<suite id="s1" name="Web" source="C:\Robot_Framework\SIPAC\SIPAC\tests\Web.robot">
+<test id="s1-t1" name="Login">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>${BROWSER_CHROMIUM}</arg>
+<arg>headless=false</arg>
+<arg>slowMo=1</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210624 15:06:44.355" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "C:\\Robot_Framework\\SIPAC\\SIPAC\\results\\browser\\traces\\4d610361-3e52-4be8-b95a-81b3e3387fd1"}</msg>
+<msg timestamp="20210624 15:06:45.265" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"C:\\Robot_Framework\\SIPAC\\SIPAC\\results\\browser\\traces\\4d610361-3e52-4be8-b95a-81b3e3387fd1"}</msg>
+<status status="PASS" starttime="20210624 15:06:44.354" endtime="20210624 15:06:45.266"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': 1366, 'height': 768}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.
+See `Browser, Context and Page` for more information about BrowserContext.</doc>
+<msg timestamp="20210624 15:06:45.268" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"width": 1366, "height": 768}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20210624 15:06:45.299" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210624 15:06:45.299" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'width': 1366, 'height': 768}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
+<msg timestamp="20210624 15:06:45.300" level="INFO">{"acceptDownloads":false,"ignoreHTTPSErrors":false,"bypassCSP":false,"viewport":{"width":1366,"height":768},"deviceScaleFactor":1,"isMobile":false,"hasTouch":false,"javaScriptEnabled":true,"offline":false,"hideRfBrowser":false}</msg>
+<status status="PASS" starttime="20210624 15:06:45.266" endtime="20210624 15:06:45.300"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${LOGIN URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210624 15:06:47.466" level="INFO">Successfully initialized new page object and opened url: https://sipac-balancer-sustentacao.info.ufrn.br/sipac/</msg>
+<status status="PASS" starttime="20210624 15:06:45.301" endtime="20210624 15:06:47.467"/>
+</kw>
+<status status="PASS" starttime="20210624 15:06:44.354" endtime="20210624 15:06:47.467"/>
+</kw>
+<kw name="Login Sucess" library="Login">
+<arg>&amp;{USER VALID}</arg>
+<kw name="Enter username and Password" library="Login">
+<arg>&amp;{USER VALID}</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${company_logo}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210624 15:06:47.527" level="INFO">Wait for Element with selector: id=login-form</msg>
+<status status="PASS" starttime="20210624 15:06:47.473" endtime="20210624 15:06:47.527"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>${username_input}</arg>
+<arg>${USER.username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210624 15:06:47.528" level="INFO">Fills the text 'andre.jadson' in the given field.</msg>
+<status status="PASS" starttime="20210624 15:06:47.527" endtime="20210624 15:06:48.556"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>${password_input}</arg>
+<arg>${USER.password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210624 15:06:48.561" level="INFO">Fills the text 'andre.jadson' in the given field.</msg>
+<status status="PASS" starttime="20210624 15:06:48.557" endtime="20210624 15:06:49.613"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${submit_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210624 15:06:49.614" endtime="20210624 15:06:51.563"/>
+</kw>
+<status status="PASS" starttime="20210624 15:06:47.471" endtime="20210624 15:06:51.563"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=info-sistema</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210624 15:06:51.833" level="INFO">Wait for Element with selector: id=info-sistema</msg>
+<status status="PASS" starttime="20210624 15:06:51.564" endtime="20210624 15:06:51.834"/>
+</kw>
+<status status="PASS" starttime="20210624 15:06:47.469" endtime="20210624 15:06:51.834"/>
+</kw>
+<kw name="Document Sucess" library="WebApp">
+<kw name="Navigate Route" library="LandingPage">
+<arg>${URL MESA VIRTUAL}</arg>
+<kw name="Go To" library="Browser">
+<arg>${ROUTE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20210624 15:06:59.066" level="INFO">Succesfully opened URL https://sipac-balancer-sustentacao.info.ufrn.br/sipac/protocolo/mesa_virtual/lista.jsf</msg>
+<status status="PASS" starttime="20210624 15:06:51.843" endtime="20210624 15:06:59.066"/>
+</kw>
+<status status="PASS" starttime="20210624 15:06:51.842" endtime="20210624 15:06:59.067"/>
+</kw>
+<kw name="Register Document" library="Documents">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${logo_mesavirtual}</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210624 15:06:59.125" level="INFO">Wait for Element with selector: css=img[src="/sipac/img_css/material_design/ic_desktop_mac_white_24dp.png"]</msg>
+<status status="PASS" starttime="20210624 15:06:59.069" endtime="20210624 15:06:59.126"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${documents_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210624 15:06:59.126" endtime="20210624 15:07:00.185"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${cad_documents_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210624 15:07:00.185" endtime="20210624 15:07:01.775"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>${title_cad_document}</arg>
+<arg>contains</arg>
+<arg>Dados do Documento</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<status status="PASS" starttime="20210624 15:07:01.776" endtime="20210624 15:07:02.134"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${type_input}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210624 15:07:02.161" level="INFO">Wait for Element with selector: id=documentoForm:tipo</msg>
+<status status="PASS" starttime="20210624 15:07:02.134" endtime="20210624 15:07:02.161"/>
+</kw>
+<kw name="Enter Value" library="CommonKey">
+<arg>${type_input}</arg>
+<arg>Termo de Abertura</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${input}</arg>
+<arg>Visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210624 15:07:02.188" level="INFO">Wait for Element with selector: id=documentoForm:tipo</msg>
+<status status="PASS" starttime="20210624 15:07:02.162" endtime="20210624 15:07:02.188"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>${input}</arg>
+<arg>${value}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210624 15:07:02.189" level="INFO">Fills the text 'Termo de Abertura' in the given field.</msg>
+<status status="PASS" starttime="20210624 15:07:02.188" endtime="20210624 15:07:03.215"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>ArrowDown</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" starttime="20210624 15:07:03.216" endtime="20210624 15:07:04.255"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" starttime="20210624 15:07:04.256" endtime="20210624 15:07:05.306"/>
+</kw>
+<status status="PASS" starttime="20210624 15:07:02.161" endtime="20210624 15:07:05.307"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${nature_input}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210624 15:07:05.362" level="INFO">Wait for Element with selector: id=documentoForm:natureza</msg>
+<status status="PASS" starttime="20210624 15:07:05.308" endtime="20210624 15:07:05.362"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${nature_input}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20210624 15:07:09.524" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: page.screenshot: Target page, context or browser has been closed</msg>
+<msg timestamp="20210624 15:07:09.528" level="FAIL">Error: page.click: Protocol error (Runtime.callFunctionOn): Target closed.
+=========================== logs ===========================
+waiting for selector "id=documentoForm:natureza"
+  selector resolved to visible &lt;select size="1" id="documentoForm:natureza" name="docum…&gt;…&lt;/select&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+=====================================================</msg>
+<status status="FAIL" starttime="20210624 15:07:05.362" endtime="20210624 15:07:09.529"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>O</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.529" endtime="20210624 15:07:09.529"/>
+</kw>
+<kw name="Keyboard Key" library="Browser">
+<arg>press</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.529" endtime="20210624 15:07:09.529"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${detailed_subject_input}</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.529" endtime="20210624 15:07:09.530"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>${detailed_subject_input}</arg>
+<arg>Teste_Automatizado</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.530" endtime="20210624 15:07:09.530"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${icon_checkbox}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.530" endtime="20210624 15:07:09.530"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${text_input}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.530" endtime="20210624 15:07:09.530"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>${text_input}</arg>
+<arg>Teste</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.531" endtime="20210624 15:07:09.531"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window and saves it.</doc>
+<status status="NOT RUN" starttime="20210624 15:07:09.531" endtime="20210624 15:07:09.531"/>
+</kw>
+<status status="FAIL" starttime="20210624 15:06:59.068" endtime="20210624 15:07:09.531"/>
+</kw>
+<status status="FAIL" starttime="20210624 15:06:51.842" endtime="20210624 15:07:09.532"/>
+</kw>
+<status status="FAIL" starttime="20210624 15:06:44.351" endtime="20210624 15:07:09.532">Error: page.click: Protocol error (Runtime.callFunctionOn): Target closed.
+=========================== logs ===========================
+waiting for selector "id=documentoForm:natureza"
+  selector resolved to visible &lt;select size="1" id="documentoForm:natureza" name="docum…&gt;…&lt;/select&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+    [ Message content over the limit has been removed. ]
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,658.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  checking that element receives pointer events at (492.48,487.62)
+  &lt;div class="_suggestion_size_ rich-sb-overflow"&gt;…&lt;/div&gt; from &lt;div class="rich-sb-common-container  " id="documento…&gt;…&lt;/div&gt; subtree intercepts pointer events
+retrying click action, attempt #11
+  waiting 500ms
+=====================================================</status>
+</test>
+<status status="FAIL" starttime="20210624 15:06:43.194" endtime="20210624 15:07:09.555"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Web">Web</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210624 15:07:09.524" level="WARN">Keyword 'Take Screenshot' could not be run on failure:
+Error: page.screenshot: Target page, context or browser has been closed</msg>
+</errors>
+</robot>
