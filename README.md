@@ -54,7 +54,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 2. Faça um clone :
 
 ```sh
-  $ git clone 
+  $ git clone https://github.com/guilhermesouzaf/Busca_Magazineluiza.git
 ```
 
 3. Executando a Aplicação:
