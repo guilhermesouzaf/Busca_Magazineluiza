@@ -1,4 +1,4 @@
-# Desafio Busca Magazineluiza
+# Desafio Magazineluiza
 
 # Índice
 
