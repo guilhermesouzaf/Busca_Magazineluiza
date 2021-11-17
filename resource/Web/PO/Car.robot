@@ -40,10 +40,11 @@ Search Product
     Get Text                    ${search_title}            contains       ${search_aux}   
     Click                       ${product_button}
     Get Text                    ${product_title}           contains       ${product_aux} 
+    Wait For Elements State     ${cart_button}            visible        10
     Click                       ${cart_button}
     Get Text                    ${cart_title}              contains       ${cart_aux}  
     Wait For Elements State     ${continue_button}         visible        10
     Click                       ${continue_button}
     Get Text                    ${identification_title}    contains       ${identification_aux}
    
-  
+    Take Screenshot
