@@ -25,7 +25,7 @@ ${increase_input}          xpath=//*[@class='BasketItemProduct-quantity-dropdown
 
 #Buttons
 ${product_button}          xpath=//*[@title='Memória RAM para Notebook 4GB DDR4']
-${cart_button}             xpath=//*[@class='button__buy button__buy-product-detail js-add-cart-button js-main-add-cart-button js-add-box-prime']
+${cart_button}             css=button[class='button__buy button__buy-product-detail js-add-cart-button js-main-add-cart-button js-add-box-prime']
 ${continue_button}         xpath=//*[@data-ga='{"category": "Carrinho", "action": "Continuar", "label": ""}']
 
 
