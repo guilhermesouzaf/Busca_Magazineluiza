@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20211116 21:40:23.306" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20211116 21:50:58.304" rpa="false" schemaversion="2">
 <suite id="s1" name="Web" source="C:\Robot_Framework\Carrinho_Magazineluiza\tests\Web.robot">
 <test id="s1-t1" name="Search">
 <kw name="Begin Web Test" library="Common" type="SETUP">
@@ -10,9 +10,9 @@
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20211116 21:40:24.474" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Robot_Framework\\Carrinho_Magazineluiza\\results\\browser\\traces\\277983d0-1e54-4b95-85a2-bdf226a01231"}</msg>
-<msg timestamp="20211116 21:40:27.728" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Robot_Framework\\Carrinho_Magazineluiza\\results\\browser\\traces\\277983d0-1e54-4b95-85a2-bdf226a01231"}</msg>
-<status status="PASS" starttime="20211116 21:40:24.473" endtime="20211116 21:40:27.728"/>
+<msg timestamp="20211116 21:50:59.453" level="INFO">{"browser": "firefox", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Robot_Framework\\Carrinho_Magazineluiza\\results\\browser\\traces\\aca6d6ee-936e-4dc8-b261-e53042348eab"}</msg>
+<msg timestamp="20211116 21:51:02.911" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Robot_Framework\\Carrinho_Magazineluiza\\results\\browser\\traces\\aca6d6ee-936e-4dc8-b261-e53042348eab"}</msg>
+<status status="PASS" starttime="20211116 21:50:59.452" endtime="20211116 21:51:02.911"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>viewport={'width': 1280, 'height': 768}</arg>
@@ -20,11 +20,11 @@ See `Browser, Context and Page` for more information about Browser and related c
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.
 See `Browser, Context and Page` for more information about BrowserContext.</doc>
-<msg timestamp="20211116 21:40:27.729" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"height": 768, "width": 1280}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
-<msg timestamp="20211116 21:40:27.738" level="INFO">Successfully created context. </msg>
-<msg timestamp="20211116 21:40:27.738" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'height': 768, 'width': 1280}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
-<msg timestamp="20211116 21:40:27.739" level="INFO">{"acceptDownloads":false,"ignoreHTTPSErrors":false,"bypassCSP":false,"viewport":{"height":768,"width":1280},"deviceScaleFactor":1,"isMobile":false,"hasTouch":false,"javaScriptEnabled":true,"offline":false,"hideRfBrowser":false}</msg>
-<status status="PASS" starttime="20211116 21:40:27.729" endtime="20211116 21:40:27.739"/>
+<msg timestamp="20211116 21:51:02.913" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "viewport": {"height": 768, "width": 1280}, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "hideRfBrowser": false}</msg>
+<msg timestamp="20211116 21:51:02.927" level="INFO">Successfully created context. </msg>
+<msg timestamp="20211116 21:51:02.927" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'viewport': {'height': 768, 'width': 1280}, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'hideRfBrowser': False}</msg>
+<msg timestamp="20211116 21:51:02.927" level="INFO">{"acceptDownloads":false,"ignoreHTTPSErrors":false,"bypassCSP":false,"viewport":{"height":768,"width":1280},"deviceScaleFactor":1,"isMobile":false,"hasTouch":false,"javaScriptEnabled":true,"offline":false,"hideRfBrowser":false}</msg>
+<status status="PASS" starttime="20211116 21:51:02.912" endtime="20211116 21:51:02.927"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${URL}</arg>
@@ -33,10 +33,10 @@ See `Browser, Context and Page` for more information about BrowserContext.</doc>
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20211116 21:40:31.910" level="INFO">Successfully initialized new page object and opened url: https://google.com.br/</msg>
-<status status="PASS" starttime="20211116 21:40:27.739" endtime="20211116 21:40:31.910"/>
+<msg timestamp="20211116 21:51:06.883" level="INFO">Successfully initialized new page object and opened url: https://google.com.br/</msg>
+<status status="PASS" starttime="20211116 21:51:02.927" endtime="20211116 21:51:06.884"/>
 </kw>
-<status status="PASS" starttime="20211116 21:40:24.473" endtime="20211116 21:40:31.911"/>
+<status status="PASS" starttime="20211116 21:50:59.451" endtime="20211116 21:51:06.884"/>
 </kw>
 <kw name="Product Search Sucess" library="WebApp">
 <kw name="Navigate Route" library="LandingPage">
@@ -46,10 +46,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Navigates to the given ``url``.</doc>
-<msg timestamp="20211116 21:40:38.428" level="INFO">Succesfully opened URL https://www.magazineluiza.com.br/</msg>
-<status status="PASS" starttime="20211116 21:40:31.912" endtime="20211116 21:40:38.429"/>
+<msg timestamp="20211116 21:51:13.402" level="INFO">Succesfully opened URL https://www.magazineluiza.com.br/</msg>
+<status status="PASS" starttime="20211116 21:51:06.886" endtime="20211116 21:51:13.402"/>
 </kw>
-<status status="PASS" starttime="20211116 21:40:31.912" endtime="20211116 21:40:38.429"/>
+<status status="PASS" starttime="20211116 21:51:06.885" endtime="20211116 21:51:13.402"/>
 </kw>
 <kw name="Search Product" library="Car">
 <doc>Fluxo Feliz, partindo da busca do produto, passando pela inserção no carrinho até a página de identificação</doc>
@@ -60,8 +60,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211116 21:40:38.566" level="INFO">Wait for Element with selector: data-testid=mod-adunit</msg>
-<status status="PASS" starttime="20211116 21:40:38.430" endtime="20211116 21:40:38.567"/>
+<msg timestamp="20211116 21:51:13.551" level="INFO">Wait for Element with selector: data-testid=mod-adunit</msg>
+<status status="PASS" starttime="20211116 21:51:13.403" endtime="20211116 21:51:13.551"/>
 </kw>
 <kw name="Enter Value" library="CommonKey">
 <arg>${search_input}</arg>
@@ -73,8 +73,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211116 21:40:38.605" level="INFO">Wait for Element with selector: data-testid=input-search</msg>
-<status status="PASS" starttime="20211116 21:40:38.568" endtime="20211116 21:40:38.605"/>
+<msg timestamp="20211116 21:51:13.594" level="INFO">Wait for Element with selector: data-testid=input-search</msg>
+<status status="PASS" starttime="20211116 21:51:13.552" endtime="20211116 21:51:13.595"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>${input}</arg>
@@ -82,8 +82,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
-<msg timestamp="20211116 21:40:38.605" level="INFO">Fills the text 'Memoria ram ddr4' in the given field.</msg>
-<status status="PASS" starttime="20211116 21:40:38.605" endtime="20211116 21:40:38.648"/>
+<msg timestamp="20211116 21:51:13.595" level="INFO">Fills the text 'Memoria ram ddr4' in the given field.</msg>
+<status status="PASS" starttime="20211116 21:51:13.595" endtime="20211116 21:51:13.665"/>
 </kw>
 <kw name="Keyboard Key" library="Browser">
 <arg>press</arg>
@@ -91,7 +91,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
-<status status="PASS" starttime="20211116 21:40:38.649" endtime="20211116 21:40:38.660"/>
+<status status="PASS" starttime="20211116 21:51:13.665" endtime="20211116 21:51:13.684"/>
 </kw>
 <kw name="Keyboard Key" library="Browser">
 <arg>press</arg>
@@ -99,9 +99,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
-<status status="PASS" starttime="20211116 21:40:38.660" endtime="20211116 21:40:38.951"/>
+<status status="PASS" starttime="20211116 21:51:13.685" endtime="20211116 21:51:14.020"/>
 </kw>
-<status status="PASS" starttime="20211116 21:40:38.567" endtime="20211116 21:40:38.951"/>
+<status status="PASS" starttime="20211116 21:51:13.551" endtime="20211116 21:51:14.020"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${search_title}</arg>
@@ -110,8 +110,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211116 21:40:39.185" level="INFO">Wait for Element with selector: data-testid=mod-o</msg>
-<status status="PASS" starttime="20211116 21:40:38.951" endtime="20211116 21:40:39.185"/>
+<msg timestamp="20211116 21:51:14.286" level="INFO">Wait for Element with selector: data-testid=mod-o</msg>
+<status status="PASS" starttime="20211116 21:51:14.020" endtime="20211116 21:51:14.286"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${search_title}</arg>
@@ -122,14 +122,14 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.
 See the `Finding elements` section for details about the selectors.</doc>
-<status status="PASS" starttime="20211116 21:40:39.185" endtime="20211116 21:40:41.836"/>
+<status status="PASS" starttime="20211116 21:51:14.287" endtime="20211116 21:51:17.077"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${product_button}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211116 21:40:41.836" endtime="20211116 21:40:42.595"/>
+<status status="PASS" starttime="20211116 21:51:17.077" endtime="20211116 21:51:18.095"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${product_title}</arg>
@@ -140,14 +140,14 @@ See the `Finding elements` section for details about the selectors.</doc>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.
 See the `Finding elements` section for details about the selectors.</doc>
-<status status="PASS" starttime="20211116 21:40:42.595" endtime="20211116 21:40:43.579"/>
+<status status="PASS" starttime="20211116 21:51:18.095" endtime="20211116 21:51:19.064"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${cart_button}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211116 21:40:43.579" endtime="20211116 21:40:43.968"/>
+<status status="PASS" starttime="20211116 21:51:19.065" endtime="20211116 21:51:20.172"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${cart_title}</arg>
@@ -158,7 +158,7 @@ See the `Finding elements` section for details about the selectors.</doc>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.
 See the `Finding elements` section for details about the selectors.</doc>
-<status status="PASS" starttime="20211116 21:40:43.968" endtime="20211116 21:40:52.284"/>
+<status status="PASS" starttime="20211116 21:51:20.173" endtime="20211116 21:51:22.233"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>${continue_button}</arg>
@@ -167,15 +167,15 @@ See the `Finding elements` section for details about the selectors.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20211116 21:40:53.350" level="INFO">Wait for Element with selector: xpath=//*[@data-ga='{"category": "Carrinho", "action": "Continuar", "label": ""}']</msg>
-<status status="PASS" starttime="20211116 21:40:52.284" endtime="20211116 21:40:53.350"/>
+<msg timestamp="20211116 21:51:22.690" level="INFO">Wait for Element with selector: css=button[data-ga='{"category": "Carrinho", "action": "Continuar", "label": ""}']</msg>
+<status status="PASS" starttime="20211116 21:51:22.233" endtime="20211116 21:51:22.691"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>${continue_button}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20211116 21:40:53.350" endtime="20211116 21:40:54.108"/>
+<status status="PASS" starttime="20211116 21:51:22.691" endtime="20211116 21:51:23.213"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>${identification_title}</arg>
@@ -186,15 +186,15 @@ See the `Finding elements` section for details about the selectors.</doc>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.
 See the `Finding elements` section for details about the selectors.</doc>
-<status status="PASS" starttime="20211116 21:40:54.108" endtime="20211116 21:40:54.323"/>
+<status status="PASS" starttime="20211116 21:51:23.214" endtime="20211116 21:51:23.438"/>
 </kw>
-<status status="PASS" starttime="20211116 21:40:38.429" endtime="20211116 21:40:54.323"/>
+<status status="PASS" starttime="20211116 21:51:13.402" endtime="20211116 21:51:23.439"/>
 </kw>
-<status status="PASS" starttime="20211116 21:40:31.911" endtime="20211116 21:40:54.323"/>
+<status status="PASS" starttime="20211116 21:51:06.885" endtime="20211116 21:51:23.439"/>
 </kw>
-<status status="PASS" starttime="20211116 21:40:24.470" endtime="20211116 21:40:54.324"/>
+<status status="PASS" starttime="20211116 21:50:59.448" endtime="20211116 21:51:23.439"/>
 </test>
-<status status="PASS" starttime="20211116 21:40:23.308" endtime="20211116 21:40:54.430"/>
+<status status="PASS" starttime="20211116 21:50:58.306" endtime="20211116 21:51:23.548"/>
 </suite>
 <statistics>
 <total>

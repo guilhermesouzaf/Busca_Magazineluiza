@@ -1,19 +1,19 @@
-{"level":30,"time":"2021-11-17T00:40:24.385Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Listening on 59937"}
-{"level":30,"time":"2021-11-17T00:40:27.731Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-17T00:40:27.731Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Trace file: "}
-{"level":30,"time":"2021-11-17T00:40:27.737Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active context"}
-{"level":30,"time":"2021-11-17T00:40:27.740Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2021-11-17T00:40:28.571Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Video path: undefined"}
-{"level":30,"time":"2021-11-17T00:40:28.571Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active page"}
-{"level":30,"time":"2021-11-17T00:40:38.650Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Invoking keyboard action press with params [\"ArrowDown\"]"}
-{"level":30,"time":"2021-11-17T00:40:38.661Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Invoking keyboard action press with params [\"Enter\"]"}
-{"level":30,"time":"2021-11-17T00:40:41.835Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element data-testid=mod-o containing Resultados para\nMemoria ram ddr4"}
-{"level":30,"time":"2021-11-17T00:40:43.577Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element xpath=//*[@class='header-product__title'] containing Memória RAM para Notebook 4GB DDR4 - WIN MEMORY WHS64S4AZD 2666Mhz"}
-{"level":30,"time":"2021-11-17T00:40:52.283Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element xpath=//*[@class='BasketPage-title'] containing Sacola"}
-{"level":30,"time":"2021-11-17T00:40:54.321Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element xpath=//*[@class='LoginPage-title'] containing Identificação"}
-{"level":30,"time":"2021-11-17T00:40:54.338Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active context"}
-{"level":30,"time":"2021-11-17T00:40:54.338Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-17T00:40:54.338Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active page"}
-{"level":30,"time":"2021-11-17T00:40:54.367Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active context"}
-{"level":30,"time":"2021-11-17T00:40:54.367Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changing current active page"}
-{"level":30,"time":"2021-11-17T00:40:54.367Z","pid":15988,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active page"}
+{"level":30,"time":"2021-11-17T00:50:59.316Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Listening on 60835"}
+{"level":30,"time":"2021-11-17T00:51:02.916Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-17T00:51:02.916Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Trace file: "}
+{"level":30,"time":"2021-11-17T00:51:02.925Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active context"}
+{"level":30,"time":"2021-11-17T00:51:02.928Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-17T00:51:03.742Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-17T00:51:03.743Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active page"}
+{"level":30,"time":"2021-11-17T00:51:13.666Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Invoking keyboard action press with params [\"ArrowDown\"]"}
+{"level":30,"time":"2021-11-17T00:51:13.686Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Invoking keyboard action press with params [\"Enter\"]"}
+{"level":30,"time":"2021-11-17T00:51:17.074Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element data-testid=mod-o containing Resultados para\nMemoria ram ddr4"}
+{"level":30,"time":"2021-11-17T00:51:19.062Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element xpath=//*[@class='header-product__title'] containing Memória RAM para Notebook 4GB DDR4 - WIN MEMORY WHS64S4AZD 2666Mhz"}
+{"level":30,"time":"2021-11-17T00:51:22.231Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element xpath=//*[@class='BasketPage-title'] containing Sacola"}
+{"level":30,"time":"2021-11-17T00:51:23.436Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Retrieved text for element xpath=//*[@class='LoginPage-title'] containing Identificação"}
+{"level":30,"time":"2021-11-17T00:51:23.446Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active context"}
+{"level":30,"time":"2021-11-17T00:51:23.447Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-17T00:51:23.447Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active page"}
+{"level":30,"time":"2021-11-17T00:51:23.487Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active context"}
+{"level":30,"time":"2021-11-17T00:51:23.487Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-17T00:51:23.487Z","pid":10888,"hostname":"DESKTOP-IV6GGCO","msg":"Changed active page"}
