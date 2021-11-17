@@ -64,7 +64,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
   
   $ cd Busca_Magazineluiza
   
-  $ robot -t "Search"-d ../results  .\tests\Web.robot
+  $ robot -t "Search" ./tests/Web.robot
  
 ```
 
