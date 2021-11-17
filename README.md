@@ -43,8 +43,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
  - Como primeiro passo é o download e instalação do **[Python](https://www.python.org/)**
 
+1.1 Instale as dependências:
+
 ```sh
-# Instale as dependências
+# Dependências
  
   $ pip install robotframework
 
