@@ -16,9 +16,9 @@ A <strong>Busca no site da Magazineluiza</strong> faz parte de uma solicitação
 No desafio foi proposto o desenvolvimento de um script de teste que realizasse a automatização dos seguintes passos:
 
 1. Acessar o site da magazineluiza.com.br;
-2. realizar a busca de um produto;
+2. Realizar a busca de um produto;
 3. Adicionar o produto ao carrinho;
-4. continuar ao passo de identificação;
+4. Continuar ao passo de identificação;
 
 <a id="documentacao"></a>
 
